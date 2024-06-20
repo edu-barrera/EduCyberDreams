@@ -1,10 +1,18 @@
+/* Fonts */
+@font-face {
+  font-family: "CyberForm";
+  src: url("/Assets/fonts/Astera/ASTERA\ v2.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
-  color: #fff;
+  color: aliceblue;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 body {
-  padding-top: 10rem;
   height: 100%;
   background-color: #0b0f17;
   display: flex;
@@ -13,35 +21,81 @@ body {
   flex-direction: column;
 }
 header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
-  padding: 10px 20px;
+  padding: 20px 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 1000;
 }
-h1 {
-  color: #fff;
-  font-size: 10rem;
-  letter-spacing: -15px;
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-h2 {
-  color: #fff;
+header nav a {
+  margin-right: 100px;
+}
+h1 {
+  font-family: CyberForm;
+  color: aliceblue;
+  font-size: 7rem;
+}
+h3 {
+  font-size: 1.3rem;
+}
+
+.background {
+  /* background-image: url(/Assets/img/img-2.jpg); */
+  background-size: cover;
+  background-position: center;
+  height: 200vh;
+  filter: blur();
+}
+.nav-btn {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.nav-btn:hover {
+  color: #f266c1;
+  text-shadow: 1px 1px 10px #00e6f6;
+}
+
+.download-cv {
+  font-weight: 900;
+
+  text-shadow: 1px 1px 10px #f266c1;
+}
+
+.portfolio {
 }
 .welcome-section {
   display: grid;
-  grid-template-columns: repeat(9, 1fr); /* 9 columns */
+  grid-template-columns: repeat(8, 1fr); /* 9 columns */
   grid-template-rows: repeat(9, auto);
   z-index: 10; /* Ensure this section is above others */
+  margin-top: 8rem;
 }
+
 .welcome-web {
   grid-area: 2 / 2 / 3 / 3;
   width: 100%;
 }
+.about-intro {
+  grid-area: 3/2/6/3;
+}
 .main-img {
+  display: block;
   width: 100%;
+
+  min-width: 350px;
   border-radius: 100px/500px;
   grid-area: 1 / 3 / 7 / 7;
   position: relative;
@@ -55,18 +109,158 @@ h2 {
 .welcome-port {
   grid-area: 3 / 7 / 4 / 8;
   z-index: 3;
+  margin-left: 30px;
 }
 #download-btn {
-  font-size: 1.5rem;
-  color: #fff;
+  font-size: 3rem;
   font-family: "Space Mono", monospace;
   text-decoration: none;
   cursor: pointer;
-  z-index: 10; /* Ensure button is on top */
 }
-.cv {
-  color: #f00e0e;
-}
+
 .img-home {
   width: 5rem;
+}
+
+/* CSS */
+.download-cv,
+.download-cv:after {
+  font-family: "Bebas Neue", sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+  border: 0;
+  color: #fff;
+  box-shadow: 6px 0px 0px #00e6f6;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.download-cv:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+
+  content: "HIRE ME PLS";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 3%,
+    #55ccd9 3%,
+    #55ccd9 5%,
+    #f26b9c 5%
+  );
+
+  clip-path: var(--slice-0);
+}
+
+.download-cv:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+.glitch-effect:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+.logos {
+  width: 5rem;
+}
+
+.skills-section {
+  margin: auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.parent-element {
+  padding: 10%;
+}
+
+.about-title {
+  font-size: 7rem;
+}
+
+.about-p {
+  font-size: 1rem;
+}
+
+.about-btn {
+  font-size: 1.5rem;
+  background-color: #00e6f680;
+  width: 8rem;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px #fdbeed;
+  border: #0b0f17 solid 1px;
+}
+
+.about-btn:hover {
+  background-color: #368886;
+  cursor: pointer;
+  transition: 200ms;
+  box-shadow: 3px 3px 15px #fa66bc;
+  color: #ffffff;
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
 }

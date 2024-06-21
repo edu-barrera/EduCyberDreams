@@ -68,7 +68,7 @@ parentElement.addEventListener("click", function (e) {
 
     aboutTitle.insertAdjacentElement("afterend", aboutSection);
   }
-  if (e.target.classList.contains("about-btn-languages")) {
+  if (e.target.classList.contains("about-btn-personal")) {
     document.createElement("div");
     aboutSection.classList.add("about-sections");
     if (aboutSection) {

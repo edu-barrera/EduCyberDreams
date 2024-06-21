@@ -47,7 +47,7 @@ h1 {
   font-size: 7rem;
 }
 h3 {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .background {
@@ -80,7 +80,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(8, 1fr); /* 9 columns */
   grid-template-rows: repeat(9, auto);
-  z-index: 10; /* Ensure this section is above others */
+  z-index: 10;
   margin-top: 8rem;
 }
 
@@ -248,7 +248,7 @@ h3 {
   width: 8rem;
   padding: 1rem;
   border-radius: 5px;
-  box-shadow: 1px 1px 10px #fdbeed;
+  box-shadow: 1px 1px 2px #fdbeed;
   border: #0b0f17 solid 1px;
 }
 
@@ -263,4 +263,26 @@ h3 {
 .about-section {
   display: flex;
   justify-content: space-between;
+}
+
+.project-outline {
+  padding: 10%;
+}
+
+.project-title {
+  font-size: 5rem;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  justify-content: space-evenly;
+}
+
+.project {
+  margin: 1rem;
+}
+
+.gif {
+  width: 100%;
 }

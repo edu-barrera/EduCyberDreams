@@ -244,10 +244,6 @@ h3 {
   font-size: 7rem;
 }
 
-.about-p {
-  font-size: 1rem;
-}
-
 .about-btn {
   font-size: 1.5rem;
   background-color: #00e6f680;
@@ -270,13 +266,37 @@ h3 {
   display: flex;
   justify-content: space-between;
 }
-
+.about-sections {
+  font-size: 1.3rem;
+}
 .about-studies-img {
   width: 50%;
 }
+.hobbies {
+  font-size: 1.5rem;
+}
 
 .about-me-img {
-  width: 15rem;
+  width: 100%;
+}
+
+.studies {
+  border: #4deeea solid;
+  box-shadow: 0px 2px 100px #4deeeb82;
+}
+
+.goals {
+  border: #fd91ff solid;
+  box-shadow: 0px 2px 100px #fcc1f982;
+}
+
+.me {
+  border: #ff0000 solid;
+  box-shadow: 0px 2px 100px #c6092282;
+}
+.movies {
+  display: flex;
+  flex-direction: row;
 }
 
 .project-outline {
@@ -332,25 +352,4 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.studies {
-  border: #4deeea solid;
-  box-shadow: 0px 2px 100px #4deeeb82;
-}
-
-.goals {
-  border: #fd91ff solid;
-  box-shadow: 0px 2px 100px #fcc1f982;
-  font-size: 1.3rem;
-}
-
-.me {
-  border: #ff0000 solid;
-  box-shadow: 0px 2px 100px #c6092282;
-}
-.movies {
-  display: flex;
-  flex-direction: row;
-  gap: 20%;
 }

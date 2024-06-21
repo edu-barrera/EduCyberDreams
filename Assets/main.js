@@ -79,11 +79,11 @@ parentElement.addEventListener("click", function (e) {
           <h2>A little more about me</h2>
           <div class="movies">
             <div>
-              <h3>My favorite game is League of Legends 😎</h3>
+              <h3 class="hobbies">My favorite game is League of Legends 😎</h3>
               <img class="about-me-img" src="Assets/img/league.png" />
             </div>
             <div>
-              <h3>Recent movies I've watched and loved ♥️</h3>
+              <h3 class="hobbies">Recent movies I've watched and loved ♥️</h3>
               <img class="about-me-img" src="Assets/img/movies.png" />
             </div>
           </div>

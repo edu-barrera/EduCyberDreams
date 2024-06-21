@@ -61,11 +61,11 @@ parentElement.addEventListener("click", function (e) {
       aboutSection.remove();
     }
     aboutSection.innerHTML = `
-      <div class="mensaje-incompleto">
-        <h2>Studies</h2>
-        <p> por favor completa la sección </p>
-      </div>`; // Mensaje al tratar de mandar form incompleto
-
+        <div class="mensaje-about studies">
+          <h2>Web systems development at Universidad de Guadalajara</h2>
+          <h3>Expected to graduate mid 2025</h3>
+          <img class="about-studies-img" src="Assets/img/studies.png" />
+        </div>`;
     aboutTitle.insertAdjacentElement("afterend", aboutSection);
   }
   if (e.target.classList.contains("about-btn-personal")) {
@@ -75,10 +75,19 @@ parentElement.addEventListener("click", function (e) {
       aboutSection.remove();
     }
     aboutSection.innerHTML = `
-      <div class="mensaje-incompleto">
-        <h2>Languages</h2>
-        <p> por favor completa la sección </p>
-      </div>`; // Mensaje al tratar de mandar form incompleto
+           <div class="mensaje-about me">
+          <h2>A little more about me</h2>
+          <div class="movies">
+            <div>
+              <h3>My favorite game is League of Legends 😎</h3>
+              <img class="about-me-img" src="Assets/img/league.png" />
+            </div>
+            <div>
+              <h3>Recent movies I've watched and loved ♥️</h3>
+              <img class="about-me-img" src="Assets/img/movies.png" />
+            </div>
+          </div>
+        </div>`;
 
     aboutTitle.insertAdjacentElement("afterend", aboutSection);
   }
@@ -89,10 +98,15 @@ parentElement.addEventListener("click", function (e) {
       aboutSection.remove();
     }
     aboutSection.innerHTML = `
-      <div class="mensaje-incompleto">
-        <h2>Goals</h2>
-        <p> por favor completa la sección </p>
-      </div>`; // Mensaje al tratar de mandar form incompleto
+       <div class="mensaje-about goals">
+          <h2>Goals for last half of 2024</h2>
+          <ul>
+            <li>Mastering React, creating an updated portfolio using React.</li>
+            <li>Finish Generation bootcamp and Mel reposteria project.</li>
+            <li><strong>Working with YOU.</strong></li>
+          </ul>
+          <img class="about-studies-img" src="Assets/img/goals.png" />
+        </div>`; // Mensaje al tratar de mandar form incompleto
 
     aboutTitle.insertAdjacentElement("afterend", aboutSection);
   }

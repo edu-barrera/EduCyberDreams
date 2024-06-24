@@ -1,7 +1,7 @@
 /* Fonts */
 @font-face {
   font-family: "CyberForm";
-  src: url("/Assets/fonts/Astera/ASTERA\ v2.ttf");
+  src: url("Assets/fonts/Astera/ASTERA\ v2.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -69,15 +69,6 @@ h3 {
   text-shadow: 1px 1px 10px #00e6f6;
 }
 
-.download-cv {
-  font-weight: 900;
-
-  text-shadow: 1px 1px 10px #f266c1;
-}
-
-.portfolio {
-}
-
 .welcome-wrapper {
   padding: 5%;
 }
@@ -94,19 +85,21 @@ h3 {
   grid-area: 2 / 2 / 3 / 3;
   width: 100%;
 }
+
 .about-intro {
   grid-area: 3/2/6/3;
 }
+
 .main-img {
   display: block;
   width: 100%;
-
   min-width: 350px;
   border-radius: 100px/500px;
   grid-area: 1 / 3 / 7 / 7;
   position: relative;
-  z-index: 1; /* Ensure image is below other elements */
+  z-index: 1; /* To ensure image is below the DEV h1 */
 }
+
 .welcome-dev {
   grid-area: 2 / 7 / 8 / 8;
   z-index: 2;
@@ -128,7 +121,13 @@ h3 {
   width: 5rem;
 }
 
-/* CSS */
+/* High font weight and text shadow for emphasis */
+.download-cv {
+  font-weight: 900;
+  text-shadow: 1px 1px 10px #f266c1;
+}
+
+/* Styles for the button and its pseudo-element */
 .download-cv,
 .download-cv:after {
   font-family: "Bebas Neue", sans-serif;
@@ -143,6 +142,7 @@ h3 {
   touch-action: manipulation;
 }
 
+/* Glitch effect text with various clip-path values */
 .download-cv:after {
   --slice-0: inset(50% 50% 50% 50%);
   --slice-1: inset(80% -6px 0 0);
@@ -169,16 +169,19 @@ h3 {
   clip-path: var(--slice-0);
 }
 
+/* Apply glitch animation on hover */
 .download-cv:hover:after {
   animation: 1s glitch;
   animation-timing-function: steps(2, end);
 }
 
+/* Glitch animation for any element with the glitch-effect class */
 .glitch-effect:after {
   animation: 1s glitch;
   animation-timing-function: steps(2, end);
 }
 
+/* Keyframes for glitch animation with varying clip-paths and transformations */
 @keyframes glitch {
   0% {
     clip-path: var(--slice-1);
@@ -225,10 +228,8 @@ h3 {
     transform: translate(0);
   }
 }
-.logos {
-  width: 5rem;
-}
 
+/* Skills section */
 .skills-section {
   margin: auto;
   width: 60%;
@@ -236,6 +237,11 @@ h3 {
   justify-content: space-between;
 }
 
+.logos {
+  width: 5rem;
+}
+
+/* About section */
 .parent-element {
   padding: 10%;
 }
@@ -299,6 +305,7 @@ h3 {
   flex-direction: row;
 }
 
+/* Projects section */
 .project-outline {
   padding: 10%;
 }
@@ -323,6 +330,8 @@ h3 {
 .tobe {
   font-size: 2rem;
 }
+
+/* Contact section */
 .contact-section {
   padding: 10%;
 }

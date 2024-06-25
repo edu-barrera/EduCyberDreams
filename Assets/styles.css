@@ -483,11 +483,9 @@ h3 {
     width: 130%;
   }
   .about-sections {
-    width: 140%;
+    width: 120%;
   }
-  .about-section {
-    width: 35rem;
-  }
+
   .about-studies-img {
     width: 100%;
   }
@@ -521,7 +519,7 @@ h3 {
     width: 190%;
   }
   .about-sections {
-    width: 190%;
+    width: 120%;
   }
 
   .about-studies-img {
@@ -531,9 +529,7 @@ h3 {
     display: flex;
     flex-direction: column;
   }
-  .about-sections {
-    font-size: 1.4rem;
-  }
+
   .skills-section {
     padding-left: 42%;
   }

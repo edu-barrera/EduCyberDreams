@@ -491,6 +491,9 @@ h3 {
   .about-studies-img {
     width: 100%;
   }
+  .skills-section {
+    padding-left: 18%;
+  }
 }
 
 @media (max-width: 520px) {
@@ -530,5 +533,8 @@ h3 {
   }
   .about-sections {
     font-size: 1.4rem;
+  }
+  .skills-section {
+    padding-left: 42%;
   }
 }

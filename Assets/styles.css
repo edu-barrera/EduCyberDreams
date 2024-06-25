@@ -477,7 +477,7 @@ h3 {
     padding: 20%;
   }
   .parent-element {
-    padding: 21%;
+    padding-right: 0%;
   }
   .projects {
     width: 130%;
@@ -509,8 +509,7 @@ h3 {
     width: 70%;
   }
   .parent-element {
-    padding: 25%;
-    padding-top: 15%;
+    padding-left: 25%;
   }
   .skills-section {
     padding-left: 9%;

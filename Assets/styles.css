@@ -314,14 +314,16 @@ h3 {
   font-size: 5rem;
 }
 .projects {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-
-  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
 }
 
 .project {
   margin: 1rem;
+  font-size: 1.3rem;
+  background-color: #3536377a;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .gif {
@@ -363,6 +365,11 @@ h3 {
   align-items: center;
 }
 
+.project-h3 {
+  font-size: 2rem;
+  color: #f9f5f8;
+}
+
 @media (max-width: 1050px) {
   .welcome-port {
     margin-left: 0px;
@@ -385,26 +392,9 @@ h3 {
   .about-intro {
     font-size: 1rem;
   }
-  .projects {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
-@media (max-width: 630px) {
-  h1 {
-    font-size: 3rem;
-  }
-  .welcome-wrapper {
-    padding: 7%;
-  }
-  .main-img {
-    min-width: 250px;
-  }
-  .about-intro {
-    font-size: 0.8rem;
-  }
-
+@media (max-width: 800px) {
   /* Grid areas */
   .welcome-web {
     grid-area: 1 / 2 / 2 / 5;
@@ -435,6 +425,30 @@ h3 {
     z-index: 3;
     font-size: 2rem;
   }
+
+  #download-btn {
+    font-size: 3rem;
+  }
+
+  .welcome-port h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 630px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .welcome-wrapper {
+    padding: 7%;
+  }
+  .main-img {
+    min-width: 250px;
+  }
+  .about-intro {
+    font-size: 0.8rem;
+  }
+
   h1 {
     font-size: 5rem;
   }
@@ -445,17 +459,11 @@ h3 {
   .about-intro {
     font-size: 1.3rem;
   }
-  #download-btn {
-    font-size: 3rem;
-  }
-  .welcome-port a {
-    font-size: 5rem;
-  }
 }
 
 @media (max-width: 570px) {
   .welcome-wrapper {
-    padding: 18%;
+    padding: 11%;
     padding-top: 7%;
     padding-bottom: 5%;
   }
@@ -474,8 +482,14 @@ h3 {
   .projects {
     width: 130%;
   }
-  .skills-section {
-    gap: 50px;
+  .about-sections {
+    width: 140%;
+  }
+  .about-section {
+    width: 35rem;
+  }
+  .about-studies-img {
+    width: 100%;
   }
 }
 
@@ -502,12 +516,20 @@ h3 {
     padding-left: 9%;
   }
   .projects {
-    width: 150%;
+    width: 190%;
   }
   .about-sections {
-    width: 150%;
+    width: 190%;
   }
-  .about-section {
-    width: 180%;
+
+  .about-studies-img {
+    width: 100%;
+  }
+  .movies {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-sections {
+    font-size: 1.4rem;
   }
 }

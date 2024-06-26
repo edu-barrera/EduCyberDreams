@@ -70,7 +70,7 @@ h3 {
 }
 
 .welcome-wrapper {
-  padding: 5%;
+  padding: 2%;
 }
 
 .welcome-section {
@@ -459,6 +459,16 @@ h3 {
 
   .about-intro {
     font-size: 1.3rem;
+  }
+
+  .nav-btn {
+    font-size: 1.3rem;
+  }
+  header nav a {
+    width: 6rem;
+    margin-right: 0%;
+  }
+  .navigation {
   }
 }
 

@@ -4,7 +4,7 @@ const colorList = ["#F26B9C", "#F266C1", "#55CCD9", "#8C4C46", "#261515"];
 const welcomePort = document.querySelector(".welcome-port");
 const aboutTitle = document.querySelector(".about-title");
 const parentElement = document.querySelector(".parent-element");
-const aboutSection = document.createElement("div");
+const s = document.createElement("div");
 
 document.addEventListener("DOMContentLoaded", (event) => {
   // Randomize the text of the download button initially
@@ -117,3 +117,27 @@ parentElement.addEventListener("click", function (e) {
     window.open("https://www.linkedin.com/in/barrera-carlos-e/", "_blank"); // Open LinkedIn profile
   }
 });
+
+// Smooth scrolling
+const navHome = document.querySelector(".nav-home");
+const navAbout = document.querySelector(".nav-about");
+const navProjects = document.querySelector(".nav-projects");
+const navContact = document.querySelector(".nav-contact");
+
+const welcomeSection = document.querySelector(".welcome-section");
+const skillsSection = document.querySelector(".skills-section");
+const ProjectSection = document.querySelector(".project-outline");
+const contactTitle = document.querySelector(".contact-section");
+
+navHome.addEventListener("click", () =>
+  welcomeSection.scrollIntoView({ behavior: "smooth" })
+);
+navAbout.addEventListener("click", () =>
+  skillsSection.scrollIntoView({ behavior: "smooth" })
+);
+navProjects.addEventListener("click", () =>
+  ProjectSection.scrollIntoView({ behavior: "smooth" })
+);
+navContact.addEventListener("click", () =>
+  contactTitle.scrollIntoView({ behavior: "smooth" })
+);

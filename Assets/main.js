@@ -5,6 +5,7 @@ const welcomePort = document.querySelector(".welcome-port");
 const aboutTitle = document.querySelector(".about-title");
 const parentElement = document.querySelector(".parent-element");
 const s = document.createElement("div");
+const aboutSection = document.createElement("div");
 
 document.addEventListener("DOMContentLoaded", (event) => {
   // Randomize the text of the download button initially
